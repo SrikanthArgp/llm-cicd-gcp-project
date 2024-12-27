@@ -2,9 +2,9 @@ name: Build and Deploy to GKE
 
 on:
   workflow_dispatch: 
-  #push:
-   # branches:
-      #- main
+  push:
+   branches:
+      - main
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
